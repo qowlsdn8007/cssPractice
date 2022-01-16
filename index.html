@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: bisque;
+        }
+        .card-wrap{
+            width:2000px;
+            position: relative;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: flex-start;
+
+        }
+        .card-wrap::-webkit-scrollbar {
+            width: 10px;
+        }
+        .card{
+            position: relative;
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 300px;
+            height: 200px;
+            margin: 20px;
+        }
+        .card-profile{
+            top: -20px;
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+        }
+        span{
+            position: absolute;
+            font-weight: bold;
+            font-size: 20px;
+            margin-top: 30px;
+        }
+        p{
+            text-align: center;
+            margin-top: 80px;
+            position: absolute;
+        }
+        .scroll{
+            color:red;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-wrap">
+        <div class="card">
+            <img class="card-profile" src="./images/예제1/profile_img.jpg" alt="" />
+            <span>"comment title"</span>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed consequuntur cum animi cumque reprehenderit alias ipsa, beatae expedita nesciunt itaque, eos maiores dolor quae, incidunt nostrum? Non nam rerum inventore!</p>
+        </div>
+        <div class="card">
+            <img class="card-profile" src="./images/예제1/profile_img2.jpg" alt="" />
+            <span>"comment title"</span>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed consequuntur cum animi cumque reprehenderit alias ipsa, beatae expedita nesciunt itaque, eos maiores dolor quae, incidunt nostrum? Non nam rerum inventore!</p>
+        </div>
+        <div class="card">
+            <img class="card-profile" src="./images/예제1/profile_img3.jpg" alt="" />
+            <span>"comment title"</span>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed consequuntur cum animi cumque reprehenderit alias ipsa, beatae expedita nesciunt itaque, eos maiores dolor quae, incidunt nostrum? Non nam rerum inventore!</p>
+        </div>
+        <div class="card">
+            <img class="card-profile" src="./images/예제1/profile_img4.jpg" alt="" />
+            <span>"comment title"</span>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed consequuntur cum animi cumque reprehenderit alias ipsa, beatae expedita nesciunt itaque, eos maiores dolor quae, incidunt nostrum? Non nam rerum inventore!</p>
+        </div>
+        <div class="card">
+            <img class="card-profile" src="./images/예제1/profile_img5.jpg" alt="" />
+            <span>"comment title"</span>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed consequuntur cum animi cumque reprehenderit alias ipsa, beatae expedita nesciunt itaque, eos maiores dolor quae, incidunt nostrum? Non nam rerum inventore!</p>
+        </div>
+        </div>
+    </div>
+    <div class="scroll" type="scroll"/>
+</body>
+</html>
